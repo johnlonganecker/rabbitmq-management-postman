@@ -1,4 +1,4 @@
-# rabbitmq-management-postman
+# RabbitMQ Management Postman
 A Postman Collection of RabbitMQ Management Plugin API
 
 ### Based On ###
