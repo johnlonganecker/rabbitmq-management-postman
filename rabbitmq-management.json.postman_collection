@@ -3,43 +3,9 @@
 	"name": "RabbitMQ Management",
 	"description": "Based on this documentation:\n\nhttps://raw.githack.com/rabbitmq/rabbitmq-management/rabbitmq_v3_6_1/priv/www/api/index.html",
 	"order": [
-		"cbfc36b2-bbcc-1d86-b00c-6fb016dc53ab",
-		"5bc259e2-35f6-e3a0-899d-22118bf39dc9",
-		"b9120d6e-e029-88f0-7ff9-070e2270b6de",
-		"baffa18b-cd90-691f-7aa8-c4527a96ac0d",
-		"4bfc266e-0694-8afd-fa21-633396bae404",
-		"aa4b1b38-3f4e-009c-16db-11e5864b558f",
-		"bdd7dffc-fa82-3312-4507-18415c1d5df4",
-		"f4aeb20d-7e14-9b2a-8524-5291edbd9a51",
-		"4b92e764-99c2-59cd-7ffe-8642c52989c0",
-		"f3a2ff0e-8f0b-8145-8832-66a8ce7136cc",
-		"d6c4bc6f-c0c3-bf38-e313-a72a90e4e7f5",
-		"8a6279a1-2c09-c354-7b03-9fcfaa0080c5",
-		"7945ddcb-9096-8a46-bea9-8e3f7bea4a7c",
-		"b58ba47b-d267-6850-890b-1bd69c714636",
-		"94421399-701e-724d-0f85-1fca237af4c6",
-		"8d686177-406d-3add-3c4b-da6bf8957e18",
-		"0b74d50d-e8c1-b1ef-65ed-679374cbadb8",
-		"6ea1650a-27f2-c363-c65a-579a96bdce86",
 		"1e4ffb57-cc22-8a21-8f89-374375109c14",
 		"66aff78e-40df-8c51-aeab-47b07a770b3f",
-		"d56ea2f4-0b8b-0a25-a04a-5e96748d8b00",
-		"f837b335-e56f-d831-215f-a915c89dcffa",
-		"c0e51bda-b3eb-f8a3-70bb-adf3a9d70838",
-		"d90eb8d8-1887-9ad7-b6c1-e0557a64e0aa",
-		"fd2d0177-5f2d-ffc2-d9ef-dc4119de1393",
-		"f64b78ec-638a-59c2-7327-40aaff233f3d",
-		"164df907-f45b-fccf-3227-b04a84012620",
 		"59f0f150-7782-ff71-c3d8-d1126b98b339",
-		"38fe8c03-2561-f365-2f4a-dbefb3b948c9",
-		"5cb1f0bc-ecb1-01df-0022-7e57f36bdcbc",
-		"a58a3319-3511-162f-9999-1641a8fd3cda",
-		"2da662e2-1e78-45fb-4dd7-ea0c9cf61617",
-		"ddd0df84-e554-8864-f46f-673766e19fe1",
-		"3f7cbdf6-89fd-b5c6-df73-59071149a4aa",
-		"e43abf77-4ab4-17a0-241b-3db5861ee5de",
-		"e6c79191-5cf9-bf6e-e941-da2f4e59990d",
-		"7be1b6fc-24c6-3767-5992-17f9c7a70328",
 		"5a59e8ba-bd95-966c-7e90-b0d9bba68d2d",
 		"22ba0ae9-6fab-b54c-5097-ce5eff5d498a",
 		"258fb250-0bec-c6db-e02f-134b29e7822c",
@@ -50,35 +16,126 @@
 		"d6f249b5-edb6-c549-47f1-74397a485e20",
 		"ed7cd859-2d94-544b-5df6-5ae43a3a85f2",
 		"1275388b-e7a0-30b7-8f8d-6d34f16d7745",
-		"4d1c878a-28ec-7116-a9ed-1f5775b8f0e6",
-		"ed340fa3-827e-ada8-f216-193a03eadd81",
-		"e9923fcc-aeb3-6612-c099-570ac2766aa6",
-		"666ad81a-c4f4-02b0-7501-a1fd4c1d57d4",
-		"3241da1d-65e4-24c7-9c58-67ee95ab687b",
-		"c9ff43e6-9394-1446-ff76-2be89658cd16",
-		"cb2a7558-8219-dd06-692c-241b39bb7d7f",
-		"07e11091-2419-aee8-fc07-4520277ad175",
-		"5df65219-029c-e66c-53ed-ab9f7dcd227f",
-		"06009945-18ec-992e-a708-686279a6c942",
-		"8790c3b0-daeb-28d0-c263-3e2d9ad0b9b2",
-		"66ee50c4-1157-739a-c75a-ed474c8cdbd4",
-		"b94e7df0-c74d-4aee-d114-f199bf43f73d",
-		"ec996fa5-0662-9737-5a36-2d9730e538f5",
-		"510384b8-7627-7c13-7110-dc99560bab65",
 		"f8acf8c4-7d6b-0cca-d47f-c680d0a305d8",
 		"9f9c72bf-70c4-02fb-2349-7a997f0e7f5a",
 		"6636a023-a2bf-9420-a0ea-9ae81ff0a3bd",
 		"86406311-01d4-cabd-8089-c56e6969f76e",
-		"597bed00-d1d5-1cb5-0a49-83adedf8e32e",
-		"54ca5ea2-d026-a8c6-07ee-b380a6658ec8",
-		"6357403e-212a-30ef-ed08-0bb9a314cdd1",
-		"c07bfe0d-cc8a-41f9-3011-d110e219dbd9",
-		"29fdb290-9fd6-8314-dc28-32d6e6eaf9ba",
-		"5aba9db4-344d-2ce2-6c4d-7dd8209bd8d4",
-		"3d9079d8-648d-be84-8acb-366d9c9b1065",
 		"e2e1f3f2-01fd-4bd3-d004-1cf89bca6f2d"
 	],
-	"folders": [],
+	"folders": [
+		{
+			"id": "09f71727-c84d-da47-df98-6dc1e3a46c40",
+			"name": "Channels",
+			"description": "",
+			"order": [
+				"94421399-701e-724d-0f85-1fca237af4c6",
+				"6ea1650a-27f2-c363-c65a-579a96bdce86",
+				"8d686177-406d-3add-3c4b-da6bf8957e18",
+				"0b74d50d-e8c1-b1ef-65ed-679374cbadb8"
+			],
+			"owner": 0
+		},
+		{
+			"id": "77c83f18-507b-f103-71d7-bc47c706b05b",
+			"name": "Connections",
+			"description": "",
+			"order": [
+				"8a6279a1-2c09-c354-7b03-9fcfaa0080c5",
+				"7945ddcb-9096-8a46-bea9-8e3f7bea4a7c",
+				"d6c4bc6f-c0c3-bf38-e313-a72a90e4e7f5",
+				"b58ba47b-d267-6850-890b-1bd69c714636"
+			],
+			"owner": 0
+		},
+		{
+			"id": "5edb4b68-67fa-0a2f-6868-444fb3e29b82",
+			"name": "Users",
+			"description": "",
+			"order": [
+				"5df65219-029c-e66c-53ed-ab9f7dcd227f",
+				"510384b8-7627-7c13-7110-dc99560bab65",
+				"06009945-18ec-992e-a708-686279a6c942",
+				"ec996fa5-0662-9737-5a36-2d9730e538f5",
+				"8790c3b0-daeb-28d0-c263-3e2d9ad0b9b2",
+				"66ee50c4-1157-739a-c75a-ed474c8cdbd4",
+				"c9ff43e6-9394-1446-ff76-2be89658cd16",
+				"b94e7df0-c74d-4aee-d114-f199bf43f73d",
+				"07e11091-2419-aee8-fc07-4520277ad175",
+				"cb2a7558-8219-dd06-692c-241b39bb7d7f"
+			],
+			"owner": 0
+		},
+		{
+			"id": "377eb29a-40a2-b9f1-3488-43fcb58903fb",
+			"name": "Server/vhost",
+			"description": "",
+			"order": [
+				"cbfc36b2-bbcc-1d86-b00c-6fb016dc53ab",
+				"5bc259e2-35f6-e3a0-899d-22118bf39dc9",
+				"b9120d6e-e029-88f0-7ff9-070e2270b6de",
+				"baffa18b-cd90-691f-7aa8-c4527a96ac0d",
+				"4bfc266e-0694-8afd-fa21-633396bae404",
+				"aa4b1b38-3f4e-009c-16db-11e5864b558f",
+				"bdd7dffc-fa82-3312-4507-18415c1d5df4",
+				"f4aeb20d-7e14-9b2a-8524-5291edbd9a51",
+				"4b92e764-99c2-59cd-7ffe-8642c52989c0",
+				"f3a2ff0e-8f0b-8145-8832-66a8ce7136cc",
+				"597bed00-d1d5-1cb5-0a49-83adedf8e32e",
+				"54ca5ea2-d026-a8c6-07ee-b380a6658ec8",
+				"e9923fcc-aeb3-6612-c099-570ac2766aa6",
+				"ed340fa3-827e-ada8-f216-193a03eadd81",
+				"666ad81a-c4f4-02b0-7501-a1fd4c1d57d4",
+				"4d1c878a-28ec-7116-a9ed-1f5775b8f0e6",
+				"3241da1d-65e4-24c7-9c58-67ee95ab687b"
+			],
+			"owner": 0
+		},
+		{
+			"id": "45412c67-914f-5960-5d9e-40e3b950fb07",
+			"name": "Exchanges",
+			"description": "",
+			"order": [
+				"f837b335-e56f-d831-215f-a915c89dcffa",
+				"c0e51bda-b3eb-f8a3-70bb-adf3a9d70838",
+				"d56ea2f4-0b8b-0a25-a04a-5e96748d8b00",
+				"d90eb8d8-1887-9ad7-b6c1-e0557a64e0aa",
+				"fd2d0177-5f2d-ffc2-d9ef-dc4119de1393",
+				"f64b78ec-638a-59c2-7327-40aaff233f3d",
+				"164df907-f45b-fccf-3227-b04a84012620"
+			],
+			"owner": 0
+		},
+		{
+			"id": "ba243e82-e976-6eb4-9d8d-a241fae279ba",
+			"name": "Queues",
+			"description": "",
+			"order": [
+				"38fe8c03-2561-f365-2f4a-dbefb3b948c9",
+				"5cb1f0bc-ecb1-01df-0022-7e57f36bdcbc",
+				"a58a3319-3511-162f-9999-1641a8fd3cda",
+				"2da662e2-1e78-45fb-4dd7-ea0c9cf61617",
+				"ddd0df84-e554-8864-f46f-673766e19fe1",
+				"3f7cbdf6-89fd-b5c6-df73-59071149a4aa",
+				"e43abf77-4ab4-17a0-241b-3db5861ee5de",
+				"e6c79191-5cf9-bf6e-e941-da2f4e59990d",
+				"7be1b6fc-24c6-3767-5992-17f9c7a70328"
+			],
+			"owner": 0
+		},
+		{
+			"id": "6332386e-bcf2-0054-58e1-712e3fd394ff",
+			"name": "Policies",
+			"description": "",
+			"order": [
+				"6357403e-212a-30ef-ed08-0bb9a314cdd1",
+				"c07bfe0d-cc8a-41f9-3011-d110e219dbd9",
+				"29fdb290-9fd6-8314-dc28-32d6e6eaf9ba",
+				"5aba9db4-344d-2ce2-6c4d-7dd8209bd8d4",
+				"3d9079d8-648d-be84-8acb-366d9c9b1065"
+			],
+			"owner": 0
+		}
+	],
 	"timestamp": 1457222676727,
 	"owner": 0,
 	"remoteLink": "",
@@ -101,7 +158,8 @@
 			"name": "Delete user by name",
 			"description": "Delete user by name",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82"
 		},
 		{
 			"id": "077bed7f-abd7-21b8-4df2-44def2710580",
@@ -139,7 +197,8 @@
 			"name": "Get user by name",
 			"description": "Get an individual user.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82"
 		},
 		{
 			"id": "09b1cb41-b902-6df4-e9be-277ad2ba2464",
@@ -178,7 +237,8 @@
 			"name": "List All Open Channels on vhost",
 			"description": "A list of all open channels in a specific vhost.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "09f71727-c84d-da47-df98-6dc1e3a46c40"
 		},
 		{
 			"id": "1275388b-e7a0-30b7-8f8d-6d34f16d7745",
@@ -216,7 +276,8 @@
 			"name": "List All Bindings in exchange is destination",
 			"description": "A list of all bindings in which a given exchange is the source.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "45412c67-914f-5960-5d9e-40e3b950fb07"
 		},
 		{
 			"id": "1e4ffb57-cc22-8a21-8f89-374375109c14",
@@ -292,7 +353,8 @@
 			"name": "Get individual Policy",
 			"description": "Get an individual policy.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "6332386e-bcf2-0054-58e1-712e3fd394ff"
 		},
 		{
 			"id": "2da662e2-1e78-45fb-4dd7-ea0c9cf61617",
@@ -312,6 +374,7 @@
 			"description": "To create a queue, you will need a body looking something like this:\n\n<blockquote>\n{<br>\n\"auto_delete\":false,<br>\n\"durable\":true,<br>\n\"arguments\":{},<br>\n\"node\":\"rabbit@smacmullen\"<br>\n}\n</blockquote>\n\nAll keys are optional.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "ba243e82-e976-6eb4-9d8d-a241fae279ba",
 			"rawModeData": "{\n\"auto_delete\":false,\n\"durable\":true,\n\"arguments\":{},\n\"node\":\"rabbit@localhost\"\n}"
 		},
 		{
@@ -331,7 +394,8 @@
 			"name": "Get List of vhost permissions",
 			"description": "A list of all permissions for a given virtual host.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "38fe8c03-2561-f365-2f4a-dbefb3b948c9",
@@ -350,7 +414,8 @@
 			"name": "Get List of All Queues",
 			"description": "A list of all queues.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "ba243e82-e976-6eb4-9d8d-a241fae279ba"
 		},
 		{
 			"id": "3d9079d8-648d-be84-8acb-366d9c9b1065",
@@ -369,7 +434,8 @@
 			"name": "Delete a policy",
 			"description": "Delete a policy",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "6332386e-bcf2-0054-58e1-712e3fd394ff"
 		},
 		{
 			"id": "3f7cbdf6-89fd-b5c6-df73-59071149a4aa",
@@ -388,7 +454,8 @@
 			"name": "List all queue bindings",
 			"description": "A list of all bindings on a given queue.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "ba243e82-e976-6eb4-9d8d-a241fae279ba"
 		},
 		{
 			"id": "4b92e764-99c2-59cd-7ffe-8642c52989c0",
@@ -407,7 +474,8 @@
 			"name": "Get vhost Definition",
 			"description": "The server definitions for a given virtual host.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "4bfc266e-0694-8afd-fa21-633396bae404",
@@ -426,7 +494,8 @@
 			"name": "Get Individual Node",
 			"description": "An individual node in the RabbitMQ cluster. \n\nOptional Query Params</br>\n<strong>?memory=true</strong><br>\nto get memory statistics\n\n<strong>?binary=true</strong><br>\nto get a breakdown of binary memory use (may be expensive if there are many small binaries in the system).",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "4d1c878a-28ec-7116-a9ed-1f5775b8f0e6",
@@ -445,7 +514,8 @@
 			"name": "Get List of vhost",
 			"description": "A list of all vhosts.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "510384b8-7627-7c13-7110-dc99560bab65",
@@ -464,7 +534,8 @@
 			"name": "Delete user on vhost",
 			"description": "Delete user on vhost",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82"
 		},
 		{
 			"id": "54ca5ea2-d026-a8c6-07ee-b380a6658ec8",
@@ -483,7 +554,8 @@
 			"name": "Delete Parameter on vhost",
 			"description": "Delete Parameter on vhost",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "597bed00-d1d5-1cb5-0a49-83adedf8e32e",
@@ -503,11 +575,12 @@
 			"description": "Create an individual parameter. To create a parameter, you will need a body looking something like this:\n\n<blockquote>\n{<br>\n\"vhost\": \"/\",<br>\n\"component\":\"federation\",<br>\n\"name\":\"local_username\",<br>\n\"value\":\"guest\"<br>\n}\n</blockquote>",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb",
 			"rawModeData": " {\n\"vhost\": \"/\",\n\"component\":\"federation\",\n\"name\":\"local_username\",\n\"value\":\"guest\"\n}"
 		},
 		{
 			"id": "59f0f150-7782-ff71-c3d8-d1126b98b339",
-			"headers": "Authorization: {{auth}}\n",
+			"headers": "Authorization: {{auth}}\nContent-Type: application/json\n",
 			"url": "{{host}}/api/exchanges/%2f/amq.direct/publish",
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -518,7 +591,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1457641130785,
+			"time": 1457727309641,
 			"name": "Publish Message to Exchange",
 			"description": "Publish a message to a given exchange. You will need a body looking something like:\n\n<blockquote>\n{<br>\n\"properties\":{},<br>\n\"routing_key\":\"my key\",<br>\n\"payload\":\"my body\",<br>\n\"payload_encoding\":\"string\"<br>\n}\n</blockquote>\n\nAll keys are mandatory. The payload_encoding key should be either \"string\" (in which case the payload will be taken to be the UTF-8 encoding of the payload field) or \"base64\" (in which case the payload field is taken to be base64 encoded).\nIf the message is published successfully, the response will look like:\n\n<blockquote>\n{\"routed\": true}\n</blockquote>\n\nrouted will be true if the message was sent to at least one queue.\nPlease note that the HTTP API is not ideal for high performance publishing; the need to create a new TCP connection for each message published can limit message throughput compared to AMQP or other protocols using long-lived connections.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
@@ -562,6 +635,7 @@
 			"description": "To create a policy, you will need a body looking something like this:\n\n<blockquote>\n{<br>\n\"pattern\":\"^amq.\",<br>\n\"definition\": {<br>\n     \"federation-upstream-set\":\"all\"<br>\n}, <br>\n\"priority\":0, <br>\n\"apply-to\": \"all\"<br>\n}\n<blockquote>\npattern and definition are mandatory, priority and apply-to are optional.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "6332386e-bcf2-0054-58e1-712e3fd394ff",
 			"rawModeData": " {\n\"pattern\":\"^amq.\",\n\"definition\": {\n\"federation-upstream-set\":\"all\"\n}, \n\"priority\":0, \n\"apply-to\": \"all\"\n}"
 		},
 		{
@@ -581,7 +655,8 @@
 			"name": "Get Cluster Name",
 			"description": "Name identifying this RabbitMQ cluster.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "5cb1f0bc-ecb1-01df-0022-7e57f36bdcbc",
@@ -600,7 +675,8 @@
 			"name": "Get vhost Queues",
 			"description": "A list of all queues in a given virtual host.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "ba243e82-e976-6eb4-9d8d-a241fae279ba"
 		},
 		{
 			"id": "5df65219-029c-e66c-53ed-ab9f7dcd227f",
@@ -620,6 +696,7 @@
 			"description": "To create a user, you will need a body looking something like this:\n\n<blockquote>\n{\"password\":\"secret\",\"tags\":\"administrator\"}\n</blockquote>\nor:\n<blockquote>\n{<br>\n\"password_hash\":\"2lmoth8l4H0DViLaK9Fxi6l9ds8=\",<br>\n\"tags\":\"administrator\"<br>\n}\n\nThe tags key is mandatory. Either <strong>password</strong> or <strong>password_hash</strong> must be set. Setting password_hash to \"\" will ensure the user cannot use a password to log in. tags is a comma-separated list of tags for the user. Currently recognised tags are \"administrator\", \"monitoring\" and \"management\".",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82",
 			"rawModeData": "{\n\"password\":\"secret\",\n\"tags\":\"administrator\"\n}"
 		},
 		{
@@ -639,7 +716,8 @@
 			"name": "Get all Policies",
 			"description": "A list of all policies.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "6332386e-bcf2-0054-58e1-712e3fd394ff"
 		},
 		{
 			"id": "6636a023-a2bf-9420-a0ea-9ae81ff0a3bd",
@@ -677,7 +755,8 @@
 			"name": "Delete vhost by name",
 			"description": "Delete an individual virtual host.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "66aff78e-40df-8c51-aeab-47b07a770b3f",
@@ -715,7 +794,8 @@
 			"name": "Get List of all users/permissions",
 			"description": "A list of all permissions for all users.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82"
 		},
 		{
 			"id": "6ea1650a-27f2-c363-c65a-579a96bdce86",
@@ -734,7 +814,8 @@
 			"name": "Channel Info",
 			"description": "Details about an individual channel.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "09f71727-c84d-da47-df98-6dc1e3a46c40"
 		},
 		{
 			"id": "7945ddcb-9096-8a46-bea9-8e3f7bea4a7c",
@@ -753,7 +834,8 @@
 			"name": "Get Individual connection",
 			"description": "An individual connection.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "77c83f18-507b-f103-71d7-bc47c706b05b"
 		},
 		{
 			"id": "7be1b6fc-24c6-3767-5992-17f9c7a70328",
@@ -773,6 +855,7 @@
 			"description": "Get messages from a queue. (This is not an HTTP GET as it will alter the state of the queue.) You should post a body looking like:\n\n<blockquote>\n{<br>\n\"count\":5,<br>\n\"requeue\":true,<br>\n\"encoding\":\"auto\",<br>\n\"truncate\":50000<br>\n}\n</blockquote>\n\n<ul>\n<li>count controls the maximum number of messages to get. You may get fewer messages than this if the queue cannot immediately provide them.</li>\n<li>requeue determines whether the messages will be removed from the queue. If requeue is true they will be requeued - but their redelivered flag will be set.</li>\n<li>encoding must be either \"auto\" (in which case the payload will be returned as a string if it is valid UTF-8, and base64 encoded otherwise), or \"base64\" (in which case the payload will always be base64 encoded).</li>\n<li>If truncate is present it will truncate the message payload if it is larger than the size given (in bytes).</li>\n</ul>\n\ntruncate is optional; all other keys are mandatory.\n\nPlease note that the get path in the HTTP API is intended for diagnostics etc - it does not implement reliable delivery and so should be treated as a sysadmin's tool rather than a general API for messaging.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "ba243e82-e976-6eb4-9d8d-a241fae279ba",
 			"rawModeData": " {\n\"count\":5,\n\"requeue\":true,\n\"encoding\":\"auto\",\n\"truncate\":50000\n}"
 		},
 		{
@@ -811,7 +894,8 @@
 			"name": "Logged In User Info",
 			"description": "Details of the currently authenticated user.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82"
 		},
 		{
 			"id": "8a6279a1-2c09-c354-7b03-9fcfaa0080c5",
@@ -830,7 +914,8 @@
 			"name": "Open vhost connections",
 			"description": "A list of all open connections in a specific vhost.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "77c83f18-507b-f103-71d7-bc47c706b05b"
 		},
 		{
 			"id": "8d686177-406d-3add-3c4b-da6bf8957e18",
@@ -849,7 +934,8 @@
 			"name": "List All Open Channels",
 			"description": "A list of all open channels.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "09f71727-c84d-da47-df98-6dc1e3a46c40"
 		},
 		{
 			"id": "94421399-701e-724d-0f85-1fca237af4c6",
@@ -868,7 +954,8 @@
 			"name": "List Channels on Connection",
 			"description": "List of all channels for a given connection.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "09f71727-c84d-da47-df98-6dc1e3a46c40"
 		},
 		{
 			"id": "9a613d98-a364-f853-69cf-1543bab4d731",
@@ -925,7 +1012,8 @@
 			"name": "Get Individual Queue",
 			"description": "An individual queue.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "ba243e82-e976-6eb4-9d8d-a241fae279ba"
 		},
 		{
 			"id": "aa4b1b38-3f4e-009c-16db-11e5864b558f",
@@ -944,7 +1032,8 @@
 			"name": "Get Management Plugin Extensions",
 			"description": "A list of extensions to the management plugin.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "b58ba47b-d267-6850-890b-1bd69c714636",
@@ -963,7 +1052,8 @@
 			"name": "Close Individual connection",
 			"description": "Close the connection. Optionally set the \"X-Reason\" header when DELETEing to provide a reason.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "77c83f18-507b-f103-71d7-bc47c706b05b"
 		},
 		{
 			"id": "b9120d6e-e029-88f0-7ff9-070e2270b6de",
@@ -983,6 +1073,7 @@
 			"description": "Set the name identifying this RabbitMQ cluster.\n\nLook at the JSON payload in the request body.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb",
 			"rawModeData": "{\n  \"name\": \"rabbit@localhost\"\n}"
 		},
 		{
@@ -1002,7 +1093,8 @@
 			"name": "Get permission for user/vhost",
 			"description": "An individual permission of a user and virtual host.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82"
 		},
 		{
 			"id": "baffa18b-cd90-691f-7aa8-c4527a96ac0d",
@@ -1021,7 +1113,8 @@
 			"name": "Get All Nodes",
 			"description": "A list of nodes in the RabbitMQ cluster.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "bdd7dffc-fa82-3312-4507-18415c1d5df4",
@@ -1040,7 +1133,8 @@
 			"name": "Get Server Definitions",
 			"description": "The server definitions - exchanges, queues, bindings, users, virtual hosts, permissions and parameters. Everything apart from messages. POST to upload an existing set of definitions.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "c07bfe0d-cc8a-41f9-3011-d110e219dbd9",
@@ -1059,7 +1153,8 @@
 			"name": "Get all policies",
 			"description": "A list of all policies in a given virtual host.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "6332386e-bcf2-0054-58e1-712e3fd394ff"
 		},
 		{
 			"id": "c0e51bda-b3eb-f8a3-70bb-adf3a9d70838",
@@ -1078,7 +1173,8 @@
 			"name": "Get Exchange on vhost",
 			"description": "Get individual exchange on vhost by name",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "45412c67-914f-5960-5d9e-40e3b950fb07"
 		},
 		{
 			"id": "c97a970c-7dc8-b3e2-b420-8b384ad0a2df",
@@ -1116,7 +1212,8 @@
 			"name": "Get list of all users",
 			"description": "Get list of all users",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82"
 		},
 		{
 			"id": "cb2a7558-8219-dd06-692c-241b39bb7d7f",
@@ -1135,7 +1232,8 @@
 			"name": "Get user permission",
 			"description": "Get user permission",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82"
 		},
 		{
 			"id": "cbfc36b2-bbcc-1d86-b00c-6fb016dc53ab",
@@ -1150,11 +1248,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1457639379272,
+			"time": 1457641989843,
 			"name": "Get Overview",
 			"description": "Various random bits of information that describe the whole system.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "d56ea2f4-0b8b-0a25-a04a-5e96748d8b00",
@@ -1173,7 +1272,8 @@
 			"name": "List Exchanges",
 			"description": "A list of all exchanges.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "45412c67-914f-5960-5d9e-40e3b950fb07"
 		},
 		{
 			"id": "d6c4bc6f-c0c3-bf38-e313-a72a90e4e7f5",
@@ -1192,7 +1292,8 @@
 			"name": "Open Connections",
 			"description": "A list of all open connections.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "77c83f18-507b-f103-71d7-bc47c706b05b"
 		},
 		{
 			"id": "d6f249b5-edb6-c549-47f1-74397a485e20",
@@ -1231,6 +1332,7 @@
 			"description": "Create exchange on vhost",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "45412c67-914f-5960-5d9e-40e3b950fb07",
 			"rawModeData": "{\n    \"type\":\"direct\",\n    \"auto_delete\":false,\n    \"durable\":true,\n    \"internal\":false,\n    \"arguments\":{}\n}"
 		},
 		{
@@ -1250,7 +1352,8 @@
 			"name": "Delete a Queue",
 			"description": "When deleteing a queue you can add the query string parameters \n\nQuery Parameters<br>\n<strong>if-empty=true</strong><br> \n<strong>if-unused=true</strong>\n\nThese prevent the delete from succeeding if the queue contains messages, or has consumers, respectively.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "ba243e82-e976-6eb4-9d8d-a241fae279ba"
 		},
 		{
 			"id": "e2e1f3f2-01fd-4bd3-d004-1cf89bca6f2d",
@@ -1288,7 +1391,8 @@
 			"name": "Delete queue contents",
 			"description": "Delete queue contents ",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "ba243e82-e976-6eb4-9d8d-a241fae279ba"
 		},
 		{
 			"id": "e6c79191-5cf9-bf6e-e941-da2f4e59990d",
@@ -1308,6 +1412,7 @@
 			"description": "Actions that can be taken on a queue. POST a body like:\n\n<blockquote>\n{\"action\":\"sync\"}\n</blockquote>\n\nCurrently the actions which are supported are <strong>sync</strong> and <strong>cancel_sync</strong>.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "ba243e82-e976-6eb4-9d8d-a241fae279ba",
 			"rawModeData": "{\n\"action\": \"sync\"\n}"
 		},
 		{
@@ -1328,6 +1433,7 @@
 			"description": "Create an individual virtual host. As a virtual host usually only has a name, you do not need an HTTP body. To enable / disable tracing, provide a body looking like:\n\n<blockquote>\n{\"tracing\":true}\n</blockquote>",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb",
 			"rawModeData": "{\"tracing\":true}"
 		},
 		{
@@ -1348,6 +1454,7 @@
 			"description": "Create a permission, you will need a body looking something like this:\n\n<blockquote>\n{<br>\n\"configure\":\".*\",<br>\n\"write\":\".*\",<br>\n\"read\":\".*\"<br>\n}\n</blockquote>\n\nAll keys are mandatory.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
 			"responses": [],
+			"folder": "5edb4b68-67fa-0a2f-6868-444fb3e29b82",
 			"rawModeData": "{\n\"configure\":\".\",\n\"write\":\".\",\n\"read\":\".*\"\n}"
 		},
 		{
@@ -1367,7 +1474,8 @@
 			"name": "Get vhost by Name",
 			"description": "Get an individual virtual host.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "ed7cd859-2d94-544b-5df6-5ae43a3a85f2",
@@ -1405,7 +1513,8 @@
 			"name": "Set vhost Definition",
 			"description": "Set the server definitions for a given virtual host - exchanges, queues, bindings and policies. Note that:\n\n<ul>\n<li>The definitions are merged. Anything already existing on the server but not in the uploaded definitions is untouched.</li>\n<li>Conflicting definitions on immutable objects (exchanges, queues and bindings) will cause an error.</li>\n<li>Conflicting definitions on mutable objects will cause the object in the server to be overwritten with the object from the definitions.</li>\n<li>In the event of an error you will be left with a part-applied set of definitions.</li>\n</ul>\n\nFor convenience you may upload a file from a browser to this URI (i.e. you can use multipart/form-data as well as application/json) in which case the definitions should be uploaded as a form field named \"file\".",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "f4aeb20d-7e14-9b2a-8524-5291edbd9a51",
@@ -1424,7 +1533,8 @@
 			"name": "Set Server Definitions",
 			"description": "Set the server definitions - exchanges, queues, bindings, users, virtual hosts, permissions and parameters. Everything apart from messages. Upload an existing set of definitions. Note that:\n\n<ul>\n<li>The definitions are merged. Anything already existing on the server but not in the uploaded definitions is untouched.</li>\n<li>Conflicting definitions on immutable objects (exchanges, queues and bindings) will cause an error.</li>\n<li>Conflicting definitions on mutable objects will cause the object in the server to be overwritten with the object from the definitions.</li>\n<li>In the event of an error you will be left with a part-applied set of definitions.</li>\n</ul>\n\nFor convenience you may upload a file from a browser to this URI (i.e. you can use multipart/form-data as well as application/json) in which case the definitions should be uploaded as a form field named \"file\".",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "377eb29a-40a2-b9f1-3488-43fcb58903fb"
 		},
 		{
 			"id": "f64b78ec-638a-59c2-7327-40aaff233f3d",
@@ -1443,7 +1553,8 @@
 			"name": "List All Bindings in exchange is source",
 			"description": "A list of all bindings in which a given exchange is the source.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "45412c67-914f-5960-5d9e-40e3b950fb07"
 		},
 		{
 			"id": "f837b335-e56f-d831-215f-a915c89dcffa",
@@ -1462,7 +1573,8 @@
 			"name": "List Exchanges on vhost",
 			"description": "A list of all exchanges on vhost.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "45412c67-914f-5960-5d9e-40e3b950fb07"
 		},
 		{
 			"id": "f8acf8c4-7d6b-0cca-d47f-c680d0a305d8",
@@ -1500,7 +1612,8 @@
 			"name": "Delete Exchange on vhost",
 			"description": "A list of all exchanges.",
 			"collectionId": "637a1895-9aff-af27-71cf-99efe1380937",
-			"responses": []
+			"responses": [],
+			"folder": "45412c67-914f-5960-5d9e-40e3b950fb07"
 		}
 	]
 }
