@@ -1,0 +1,2314 @@
+{
+    "info": {
+        "_postman_id": "637a1895-9aff-af27-71cf-99efe1380937",
+        "name": "RabbitMQ Management",
+        "description": "Based on this documentation:\n\nhttps://raw.githack.com/rabbitmq/rabbitmq-management/rabbitmq_v3_6_1/priv/www/api/index.html",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Channels",
+            "item": [
+                {
+                    "name": "List Channels on Connection",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/connections/name/channels",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "connections",
+                                "name",
+                                "channels"
+                            ]
+                        },
+                        "description": "List of all channels for a given connection."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Channel Info",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/channels/channel",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "channels",
+                                "channel"
+                            ]
+                        },
+                        "description": "Details about an individual channel."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List All Open Channels",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/channels",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "channels"
+                            ]
+                        },
+                        "description": "A list of all open channels."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List All Open Channels on vhost",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/vhosts/%2f/channels",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "vhosts",
+                                "%2f",
+                                "channels"
+                            ]
+                        },
+                        "description": "A list of all open channels in a specific vhost."
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Connections",
+            "item": [
+                {
+                    "name": "Open vhost connections",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/vhosts/%2f/connections",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "vhosts",
+                                "%2f",
+                                "connections"
+                            ]
+                        },
+                        "description": "A list of all open connections in a specific vhost."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Individual connection",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/connections/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "connections",
+                                "name"
+                            ]
+                        },
+                        "description": "An individual connection."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Open Connections",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/connections",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "connections"
+                            ]
+                        },
+                        "description": "A list of all open connections."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Close Individual connection",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/connections/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "connections",
+                                "name"
+                            ]
+                        },
+                        "description": "Close the connection. Optionally set the \"X-Reason\" header when DELETEing to provide a reason."
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Users",
+            "item": [
+                {
+                    "name": "Create a user",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\"password\":\"secret\",\n\"tags\":\"administrator\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/users/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "users",
+                                "name"
+                            ]
+                        },
+                        "description": "To create a user, you will need a body looking something like this:\n\n<blockquote>\n{\"password\":\"secret\",\"tags\":\"administrator\"}\n</blockquote>\nor:\n<blockquote>\n{<br>\n\"password_hash\":\"2lmoth8l4H0DViLaK9Fxi6l9ds8=\",<br>\n\"tags\":\"administrator\"<br>\n}\n\nThe tags key is mandatory. Either <strong>password</strong> or <strong>password_hash</strong> must be set. Setting password_hash to \"\" will ensure the user cannot use a password to log in. tags is a comma-separated list of tags for the user. Currently recognised tags are \"administrator\", \"monitoring\" and \"management\"."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete user on vhost",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/permissions/vhost/user",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "permissions",
+                                "vhost",
+                                "user"
+                            ]
+                        },
+                        "description": "Delete user on vhost"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete user by name",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/users/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "users",
+                                "name"
+                            ]
+                        },
+                        "description": "Delete user by name"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create user permission/vhost",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\"configure\":\".\",\n\"write\":\".\",\n\"read\":\".*\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/permissions/vhost/user",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "permissions",
+                                "vhost",
+                                "user"
+                            ]
+                        },
+                        "description": "Create a permission, you will need a body looking something like this:\n\n<blockquote>\n{<br>\n\"configure\":\".*\",<br>\n\"write\":\".*\",<br>\n\"read\":\".*\"<br>\n}\n</blockquote>\n\nAll keys are mandatory."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Logged In User Info",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/whoami",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "whoami"
+                            ]
+                        },
+                        "description": "Details of the currently authenticated user."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get List of all users/permissions",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/permissions",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "permissions"
+                            ]
+                        },
+                        "description": "A list of all permissions for all users."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get list of all users",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/users",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "users"
+                            ]
+                        },
+                        "description": "Get list of all users"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get permission for user/vhost",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/permissions/%2f/broker",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "permissions",
+                                "%2f",
+                                "broker"
+                            ]
+                        },
+                        "description": "An individual permission of a user and virtual host."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get user by name",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/users/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "users",
+                                "name"
+                            ]
+                        },
+                        "description": "Get an individual user."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get user permission",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/users/name/permissions",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "users",
+                                "name",
+                                "permissions"
+                            ]
+                        },
+                        "description": "Get user permission"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Server/vhost",
+            "item": [
+                {
+                    "name": "Get Overview",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/overview",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "overview"
+                            ]
+                        },
+                        "description": "Various random bits of information that describe the whole system."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Cluster Name",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/cluster-name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "cluster-name"
+                            ]
+                        },
+                        "description": "Name identifying this RabbitMQ cluster."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Set Cluster Name",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"rabbit@localhost\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/cluster-name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "cluster-name"
+                            ]
+                        },
+                        "description": "Set the name identifying this RabbitMQ cluster.\n\nLook at the JSON payload in the request body."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get All Nodes",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/nodes",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "nodes"
+                            ]
+                        },
+                        "description": "A list of nodes in the RabbitMQ cluster."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Individual Node",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/nodes/rabbit@da3be74c053640fe92c6a39e2d7a5e46?memory=true&binary=true",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "nodes",
+                                "rabbit@da3be74c053640fe92c6a39e2d7a5e46"
+                            ],
+                            "query": [
+                                {
+                                    "key": "memory",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "binary",
+                                    "value": "true"
+                                }
+                            ]
+                        },
+                        "description": "An individual node in the RabbitMQ cluster. \n\nOptional Query Params</br>\n<strong>?memory=true</strong><br>\nto get memory statistics\n\n<strong>?binary=true</strong><br>\nto get a breakdown of binary memory use (may be expensive if there are many small binaries in the system)."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Management Plugin Extensions",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/extensions",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "extensions"
+                            ]
+                        },
+                        "description": "A list of extensions to the management plugin."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Server Definitions",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/definitions",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "definitions"
+                            ]
+                        },
+                        "description": "The server definitions - exchanges, queues, bindings, users, virtual hosts, permissions and parameters. Everything apart from messages. POST to upload an existing set of definitions."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Set Server Definitions",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/definitions",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "definitions"
+                            ]
+                        },
+                        "description": "Set the server definitions - exchanges, queues, bindings, users, virtual hosts, permissions and parameters. Everything apart from messages. Upload an existing set of definitions. Note that:\n\n<ul>\n<li>The definitions are merged. Anything already existing on the server but not in the uploaded definitions is untouched.</li>\n<li>Conflicting definitions on immutable objects (exchanges, queues and bindings) will cause an error.</li>\n<li>Conflicting definitions on mutable objects will cause the object in the server to be overwritten with the object from the definitions.</li>\n<li>In the event of an error you will be left with a part-applied set of definitions.</li>\n</ul>\n\nFor convenience you may upload a file from a browser to this URI (i.e. you can use multipart/form-data as well as application/json) in which case the definitions should be uploaded as a form field named \"file\"."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get vhost Definition",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/definitions/vhost",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "definitions",
+                                "vhost"
+                            ]
+                        },
+                        "description": "The server definitions for a given virtual host."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Set vhost Definition",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/definitions/vhost",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "definitions",
+                                "vhost"
+                            ]
+                        },
+                        "description": "Set the server definitions for a given virtual host - exchanges, queues, bindings and policies. Note that:\n\n<ul>\n<li>The definitions are merged. Anything already existing on the server but not in the uploaded definitions is untouched.</li>\n<li>Conflicting definitions on immutable objects (exchanges, queues and bindings) will cause an error.</li>\n<li>Conflicting definitions on mutable objects will cause the object in the server to be overwritten with the object from the definitions.</li>\n<li>In the event of an error you will be left with a part-applied set of definitions.</li>\n</ul>\n\nFor convenience you may upload a file from a browser to this URI (i.e. you can use multipart/form-data as well as application/json) in which case the definitions should be uploaded as a form field named \"file\"."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create parameter on vhost",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": " {\n\"vhost\": \"/\",\n\"component\":\"federation\",\n\"name\":\"local_username\",\n\"value\":\"guest\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/parameters/component/vhost/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "parameters",
+                                "component",
+                                "vhost",
+                                "name"
+                            ]
+                        },
+                        "description": "Create an individual parameter. To create a parameter, you will need a body looking something like this:\n\n<blockquote>\n{<br>\n\"vhost\": \"/\",<br>\n\"component\":\"federation\",<br>\n\"name\":\"local_username\",<br>\n\"value\":\"guest\"<br>\n}\n</blockquote>"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete Parameter on vhost",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/parameters/component/vhost/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "parameters",
+                                "component",
+                                "vhost",
+                                "name"
+                            ]
+                        },
+                        "description": "Delete Parameter on vhost"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create vhost",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"tracing\":true}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/vhosts/blah",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "vhosts",
+                                "blah"
+                            ]
+                        },
+                        "description": "Create an individual virtual host. As a virtual host usually only has a name, you do not need an HTTP body. To enable / disable tracing, provide a body looking like:\n\n<blockquote>\n{\"tracing\":true}\n</blockquote>"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get vhost by Name",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/vhosts/%2f",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "vhosts",
+                                "%2f"
+                            ]
+                        },
+                        "description": "Get an individual virtual host."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete vhost by name",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/vhosts/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "vhosts",
+                                "name"
+                            ]
+                        },
+                        "description": "Delete an individual virtual host."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get List of vhost",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/vhosts",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "vhosts"
+                            ]
+                        },
+                        "description": "A list of all vhosts."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get List of vhost permissions",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/vhosts/%2f/permissions",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "vhosts",
+                                "%2f",
+                                "permissions"
+                            ]
+                        },
+                        "description": "A list of all permissions for a given virtual host."
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Exchanges",
+            "item": [
+                {
+                    "name": "List Exchanges on vhost",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/exchanges/%2f",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "exchanges",
+                                "%2f"
+                            ]
+                        },
+                        "description": "A list of all exchanges on vhost."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Exchange on vhost",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/exchanges/%2f/amq.direct",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "exchanges",
+                                "%2f",
+                                "amq.direct"
+                            ]
+                        },
+                        "description": "Get individual exchange on vhost by name"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List Exchanges",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/exchanges",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "exchanges"
+                            ]
+                        },
+                        "description": "A list of all exchanges."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Exchange on vhost",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"type\":\"direct\",\n    \"auto_delete\":false,\n    \"durable\":true,\n    \"internal\":false,\n    \"arguments\":{}\n}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/exchanges/%2f/some.name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "exchanges",
+                                "%2f",
+                                "some.name"
+                            ]
+                        },
+                        "description": "Create exchange on vhost"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete Exchange on vhost",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/exchanges/%2f/some.name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "exchanges",
+                                "%2f",
+                                "some.name"
+                            ]
+                        },
+                        "description": "A list of all exchanges."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List All Bindings in exchange is source",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/exchanges/%2f/amq.direct/bindings/source",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "exchanges",
+                                "%2f",
+                                "amq.direct",
+                                "bindings",
+                                "source"
+                            ]
+                        },
+                        "description": "A list of all bindings in which a given exchange is the source."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List All Bindings in exchange is destination",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/exchanges/%2f/amq.direct/bindings/destination",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "exchanges",
+                                "%2f",
+                                "amq.direct",
+                                "bindings",
+                                "destination"
+                            ]
+                        },
+                        "description": "A list of all bindings in which a given exchange is the source."
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Queues",
+            "item": [
+                {
+                    "name": "Get List of All Queues",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/queues",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "queues"
+                            ]
+                        },
+                        "description": "A list of all queues."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get vhost Queues",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/queues/%2f",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "queues",
+                                "%2f"
+                            ]
+                        },
+                        "description": "A list of all queues in a given virtual host."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Individual Queue",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/queues/%2f/queue-name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "queues",
+                                "%2f",
+                                "queue-name"
+                            ]
+                        },
+                        "description": "An individual queue."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create a Queue",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\"auto_delete\":false,\n\"durable\":true,\n\"arguments\":{},\n\"node\":\"rabbit@localhost\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/queues/%2f/queue-name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "queues",
+                                "%2f",
+                                "queue-name"
+                            ]
+                        },
+                        "description": "To create a queue, you will need a body looking something like this:\n\n<blockquote>\n{<br>\n\"auto_delete\":false,<br>\n\"durable\":true,<br>\n\"arguments\":{},<br>\n\"node\":\"rabbit@smacmullen\"<br>\n}\n</blockquote>\n\nAll keys are optional."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete a Queue",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/queues/%2f/queue-name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "queues",
+                                "%2f",
+                                "queue-name"
+                            ]
+                        },
+                        "description": "When deleteing a queue you can add the query string parameters \n\nQuery Parameters<br>\n<strong>if-empty=true</strong><br> \n<strong>if-unused=true</strong>\n\nThese prevent the delete from succeeding if the queue contains messages, or has consumers, respectively."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List all queue bindings",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/queues/%2f/hello/bindings",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "queues",
+                                "%2f",
+                                "hello",
+                                "bindings"
+                            ]
+                        },
+                        "description": "A list of all bindings on a given queue."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete queue contents",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/queues/%2f/queue-name/contents",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "queues",
+                                "%2f",
+                                "queue-name",
+                                "contents"
+                            ]
+                        },
+                        "description": "Delete queue contents "
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Perform action on queue",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\"action\": \"sync\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/queues/%2f/queue-name/actions",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "queues",
+                                "%2f",
+                                "queue-name",
+                                "actions"
+                            ]
+                        },
+                        "description": "Actions that can be taken on a queue. POST a body like:\n\n<blockquote>\n{\"action\":\"sync\"}\n</blockquote>\n\nCurrently the actions which are supported are <strong>sync</strong> and <strong>cancel_sync</strong>."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get message from queue",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": " {\n\"count\":5,\n\"requeue\":true,\n\"encoding\":\"auto\",\n\"truncate\":50000\n}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/queues/%2f/queue-name/get",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "queues",
+                                "%2f",
+                                "queue-name",
+                                "get"
+                            ]
+                        },
+                        "description": "Get messages from a queue. (This is not an HTTP GET as it will alter the state of the queue.) You should post a body looking like:\n\n<blockquote>\n{<br>\n\"count\":5,<br>\n\"requeue\":true,<br>\n\"encoding\":\"auto\",<br>\n\"truncate\":50000<br>\n}\n</blockquote>\n\n<ul>\n<li>count controls the maximum number of messages to get. You may get fewer messages than this if the queue cannot immediately provide them.</li>\n<li>requeue determines whether the messages will be removed from the queue. If requeue is true they will be requeued - but their redelivered flag will be set.</li>\n<li>encoding must be either \"auto\" (in which case the payload will be returned as a string if it is valid UTF-8, and base64 encoded otherwise), or \"base64\" (in which case the payload will always be base64 encoded).</li>\n<li>If truncate is present it will truncate the message payload if it is larger than the size given (in bytes).</li>\n</ul>\n\ntruncate is optional; all other keys are mandatory.\n\nPlease note that the get path in the HTTP API is intended for diagnostics etc - it does not implement reliable delivery and so should be treated as a sysadmin's tool rather than a general API for messaging."
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Policies",
+            "item": [
+                {
+                    "name": "Get all Policies",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/policies",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "policies"
+                            ]
+                        },
+                        "description": "A list of all policies."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get all policies",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/policies/vhost",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "policies",
+                                "vhost"
+                            ]
+                        },
+                        "description": "A list of all policies in a given virtual host."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get individual Policy",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/policies/vhost/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "policies",
+                                "vhost",
+                                "name"
+                            ]
+                        },
+                        "description": "Get an individual policy."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create a policy",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": " {\n\"pattern\":\"^amq.\",\n\"definition\": {\n\"federation-upstream-set\":\"all\"\n}, \n\"priority\":0, \n\"apply-to\": \"all\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/policies/vhost/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "policies",
+                                "vhost",
+                                "name"
+                            ]
+                        },
+                        "description": "To create a policy, you will need a body looking something like this:\n\n<blockquote>\n{<br>\n\"pattern\":\"^amq.\",<br>\n\"definition\": {<br>\n     \"federation-upstream-set\":\"all\"<br>\n}, <br>\n\"priority\":0, <br>\n\"apply-to\": \"all\"<br>\n}\n<blockquote>\npattern and definition are mandatory, priority and apply-to are optional."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete a policy",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{auth}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{host}}/api/policies/vhost/name",
+                            "host": [
+                                "{{host}}"
+                            ],
+                            "path": [
+                                "api",
+                                "policies",
+                                "vhost",
+                                "name"
+                            ]
+                        },
+                        "description": "Delete a policy"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Consumer Info",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/consumers",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "consumers"
+                    ]
+                },
+                "description": "A list of all consumers."
+            },
+            "response": []
+        },
+        {
+            "name": "Consumer Info on vhost",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/consumers/%2f",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "consumers",
+                        "%2f"
+                    ]
+                },
+                "description": "A list of all consumers on vhost."
+            },
+            "response": []
+        },
+        {
+            "name": "Publish Message to Exchange",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": " {\n\"properties\":{},\n\"routing_key\":\"my key\",\n\"payload\":\"my body\",\n\"payload_encoding\":\"string\"\n}"
+                },
+                "url": {
+                    "raw": "{{host}}/api/exchanges/%2f/amq.direct/publish",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "exchanges",
+                        "%2f",
+                        "amq.direct",
+                        "publish"
+                    ]
+                },
+                "description": "Publish a message to a given exchange. You will need a body looking something like:\n\n<blockquote>\n{<br>\n\"properties\":{},<br>\n\"routing_key\":\"my key\",<br>\n\"payload\":\"my body\",<br>\n\"payload_encoding\":\"string\"<br>\n}\n</blockquote>\n\nAll keys are mandatory. The payload_encoding key should be either \"string\" (in which case the payload will be taken to be the UTF-8 encoding of the payload field) or \"base64\" (in which case the payload field is taken to be base64 encoded).\nIf the message is published successfully, the response will look like:\n\n<blockquote>\n{\"routed\": true}\n</blockquote>\n\nrouted will be true if the message was sent to at least one queue.\nPlease note that the HTTP API is not ideal for high performance publishing; the need to create a new TCP connection for each message published can limit message throughput compared to AMQP or other protocols using long-lived connections."
+            },
+            "response": []
+        },
+        {
+            "name": "List of all bindings",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings"
+                    ]
+                },
+                "description": "A list of all bindings."
+            },
+            "response": []
+        },
+        {
+            "name": "List of all vhost bindings",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings/%2f",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings",
+                        "%2f"
+                    ]
+                },
+                "description": "A list of all bindings in a given virtual host."
+            },
+            "response": []
+        },
+        {
+            "name": "List Exchange/Queue Binding",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings/vhost/e/exchange/q/queue",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings",
+                        "vhost",
+                        "e",
+                        "exchange",
+                        "q",
+                        "queue"
+                    ]
+                },
+                "description": "A list of all bindings between an exchange and a queue. Remember, an exchange and a queue can be bound together many times!"
+            },
+            "response": []
+        },
+        {
+            "name": "Create Exchange/Queue Binding",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n\"routing_key\":\"my_routing_key\",\n\"arguments\":{}\n}"
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings/vhost/e/exchange/q/queue",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings",
+                        "vhost",
+                        "e",
+                        "exchange",
+                        "q",
+                        "queue"
+                    ]
+                },
+                "description": "Create a new binding, POST to this URI. You will need a body looking something like this:\n\n<blockquote>\n{<br>\n\"routing_key\":\"my_routing_key\",<br>\n\"arguments\":{}<br>\n}\n</blockquote>\n\nAll keys are optional. The response will contain a Location header telling you the URI of your new binding."
+            },
+            "response": []
+        },
+        {
+            "name": "Get individual exchange/queue binding",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings/vhost/e/exchange/q/queue/props",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings",
+                        "vhost",
+                        "e",
+                        "exchange",
+                        "q",
+                        "queue",
+                        "props"
+                    ]
+                },
+                "description": "An individual binding between an exchange and a queue. The props part of the URI is a \"name\" for the binding composed of its routing key and a hash of its arguments."
+            },
+            "response": []
+        },
+        {
+            "name": "Delete individual exchange/queue binding",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings/vhost/e/exchange/q/queue/props",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings",
+                        "vhost",
+                        "e",
+                        "exchange",
+                        "q",
+                        "queue",
+                        "props"
+                    ]
+                },
+                "description": "An individual binding between an exchange and a queue. The props part of the URI is a \"name\" for the binding composed of its routing key and a hash of its arguments."
+            },
+            "response": []
+        },
+        {
+            "name": "Get individual exchange/exchange binding Advance",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings/vhost/e/source/e/destination",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings",
+                        "vhost",
+                        "e",
+                        "source",
+                        "e",
+                        "destination"
+                    ]
+                },
+                "description": "Get individual binding between an exchange and a queue. \n\nThe props part of the URI is a \"name\" for the binding composed of its routing key and a hash of its arguments."
+            },
+            "response": []
+        },
+        {
+            "name": "/api/bindings/vhost/e/source/e/destination",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings/vhost/e/source/e/destination",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings",
+                        "vhost",
+                        "e",
+                        "source",
+                        "e",
+                        "destination"
+                    ]
+                },
+                "description": "Post individual binding between an exchange and a queue. \n\nThe props part of the URI is a \"name\" for the binding composed of its routing key and a hash of its arguments."
+            },
+            "response": []
+        },
+        {
+            "name": "/api/bindings/vhost/e/source/e/destination/props",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings/vhost/e/source/e/destination/props",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings",
+                        "vhost",
+                        "e",
+                        "source",
+                        "e",
+                        "destination",
+                        "props"
+                    ]
+                },
+                "description": "A list of all bindings between two exchanges. Similar to the list of all bindings between an exchange and a queue, above."
+            },
+            "response": []
+        },
+        {
+            "name": "/api/bindings/vhost/e/source/e/destination/props",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/bindings/vhost/e/source/e/destination/props",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "bindings",
+                        "vhost",
+                        "e",
+                        "source",
+                        "e",
+                        "destination",
+                        "props"
+                    ]
+                },
+                "description": "A list of all bindings between two exchanges. Similar to the list of all bindings between an exchange and a queue, above."
+            },
+            "response": []
+        },
+        {
+            "name": "A list of all parameters",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/parameters",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "parameters"
+                    ]
+                },
+                "description": "A list of all parameters."
+            },
+            "response": []
+        },
+        {
+            "name": "List of all parameter/component",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/parameters/component",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "parameters",
+                        "component"
+                    ]
+                },
+                "description": "A list of all parameters for a given component."
+            },
+            "response": []
+        },
+        {
+            "name": "List of all parameters/component on vhost",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/parameters/component/vhost",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "parameters",
+                        "component",
+                        "vhost"
+                    ]
+                },
+                "description": "A list of all parameters for a given component and virtual host."
+            },
+            "response": []
+        },
+        {
+            "name": "Get an individual parameter",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/parameters/component/vhost/name",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "parameters",
+                        "component",
+                        "vhost",
+                        "name"
+                    ]
+                },
+                "description": "Get an individual parameter"
+            },
+            "response": []
+        },
+        {
+            "name": "Declare test queue",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "{{auth}}"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{host}}/api/aliveness-test/%2f",
+                    "host": [
+                        "{{host}}"
+                    ],
+                    "path": [
+                        "api",
+                        "aliveness-test",
+                        "%2f"
+                    ]
+                },
+                "description": "Declares a test queue, then publishes and consumes a message. Intended for use by monitoring tools. If everything is working correctly, will return HTTP status 200 with body:\n\n<blockquote>\n{\"status\":\"ok\"}\n</blockquote>\nNote: the test queue will not be deleted (to to prevent queue churn if this is repeatedly pinged)."
+            },
+            "response": []
+        }
+    ]
+}
